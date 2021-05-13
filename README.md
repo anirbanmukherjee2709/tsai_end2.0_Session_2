@@ -2,7 +2,7 @@
 The School of AI repo for END 2.0 Session 2
 
 ---
-![Link to Excel Sheet](https://github.com/anirbanmukherjee2709/tsai_end2.0_Session_2/raw/main/Session_2_Backpropogation.xlsx)
+[Link to Excel Sheet](https://github.com/anirbanmukherjee2709/tsai_end2.0_Session_2/raw/main/Session_2_Backpropogation.xlsx)
 ## Rewrite the whole excel sheet showing backpropagation. Explain each major step, and write it on Github.
 Here we show a sample network for the purpose of this exercise. For the simplicity of calculation we avoid the usage of biases in the network.
 
@@ -20,8 +20,8 @@ The learning rate (η) taken here is 0.5 and the activation function for this ca
 Here we have used the exact same parameter values that has been discussed in the session. Below listed are the initial values and brief description for each of the acronyms. (based on the network mentioned in the image)
 1. i1 = 0.05 (input 1 - 1st input pvorided to the network).
 2. i2 = 0.10 (input 2 - 2nd input pvorided to the network).
-3. t1 = 0.01 (target 1 -  1st actual value).
-4. t2 = 0.99 (target 2 -  2nd actual value).
+3. t1 = 0.01 (target 1 - 1st Actual Value).
+4. t2 = 0.99 (target 2 - 2nd Actual Value).
 5. h1 = 1st neuron of the hidden layer.
 6. h2 = 2nd neuron of the hidden layer.
 7. w1 = 0.15 (w1 is the weight connection between input 1 [i1] to 1st neuron of the hidden layer [h1]).
@@ -105,11 +105,11 @@ Breaking eq (3) above into each of the components we get the above equations (3.
 ```
 Hence, by the above methods and equations we calculate the gradient of error w.r.t. different weights of the network.
 
-To update the weights we use the learning rate given by the formulae below
+To update the weights we use the formula below
 ```
     w_new = w_old - (η * ∂(E_Total)/∂w_old)
 ```
-
+Here, to update the weight we take current weight and subtract the partial derivative of error function with respect to the current weight. We multiply the derivative of the error function by a selected number to make sure that the new updated weight is minimizing the error function; this number is called learning rate (η).
 
 ## Changes to backward propagation of error with each step when Learning Rate (η) of the network is changed.
 #### Learning rate changed to 0.1
