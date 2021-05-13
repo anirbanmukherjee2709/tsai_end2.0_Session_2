@@ -18,8 +18,8 @@ The learning rate (η) taken here is 0.5 and the activation function for this ca
 ![](eta%20%3D%200.5.png)
 
 Here we have used the exact same parameter values that has been discussed in the session. Below listed are the initial values and brief description for each of the acronyms. (based on the network mentioned in the image)
-1. i1 = 0.05 (input 1 - 1st input pvorided to the network).
-2. i2 = 0.10 (input 2 - 2nd input pvorided to the network).
+1. i1 = 0.05 (input 1 - 1st input provided to the network).
+2. i2 = 0.10 (input 2 - 2nd input provided to the network).
 3. t1 = 0.01 (target 1 - 1st Actual Value).
 4. t2 = 0.99 (target 2 - 2nd Actual Value).
 5. h1 = 1st neuron of the hidden layer.
@@ -27,17 +27,17 @@ Here we have used the exact same parameter values that has been discussed in the
 7. w1 = 0.15 (w1 is the weight connection between input 1 [i1] to 1st neuron of the hidden layer [h1]).
 8. w2 = 0.20 (w2 is the weight connection between input 2 [i2] to 1st neuron of the hidden layer [h1]).
 9. w3 = 0.25 (w3 is the weight connection between input 1 [i1] to 2nd neuron of the hidden layer [h2]).
-10. w4 = 0.30 (w4 is the weight connection between input 2 [i1] to 2nd neuron of the hidden layer [h2]).
-11. a_h1 = 1st neuron of the hidden layer activated by some activation funtion, in this case sigmoid.
-12. a_h2 = 2nd neuron of the hidden layer activated by some activation funtion, in this case sigmoid.
+10. w4 = 0.30 (w4 is the weight connection between input 2 [i2] to 2nd neuron of the hidden layer [h2]).
+11. a_h1 = 1st neuron of the hidden layer activated by some activation funtion, in this case sigmoid (σ).
+12. a_h2 = 2nd neuron of the hidden layer activated by some activation funtion, in this case sigmoid (σ).
 13. O1 = 1st neuron of the output layer.
 14. O2 = 2nd neuron of the output layer.
 15. w5 = 0.40 (w5 is the weight connection between activated 1st hidden neuron [a_h1] to 1st neuron of the output layer [O1]).
 16. w6 = 0.45 (w6 is the weight connection between activated 2nd hidden neuron [a_h2] to 1st neuron of the output layer [O1]).
 17. w7 = 0.50 (w7 is the weight connection between activated 1st hidden neuron [a_h1] to 2nd neuron of the output layer [O2])
 18. w8 = 0.55 (w8 is the weight connection between activated 2nd hidden neuron [a_h2] to 2nd neuron of the output layer [O2])
-19. a_O1 = 1st neuron of the Output layer activated by some activation funtion, in this case sigmoid. 1st Predicted value of the network.
-20. a_O2 = 2nd neuron of the Output layer activated by some activation funtion, in this case sigmoid. 2nd Predicted value of the network.
+19. a_O1 = 1st neuron of the Output layer activated by some activation funtion, in this case sigmoid (σ). 1st Predicted value of the network.
+20. a_O2 = 2nd neuron of the Output layer activated by some activation funtion, in this case sigmoid (σ). 2nd Predicted value of the network.
 21. E1 = Error or loss from the 1st activated Output Neuron, defined as a function of difference between prediction and actual.
 22. E2 = Error or loss from the 2nd activated Output Neuron, defined as a function of difference between prediction and actual.
 23. E_Total = Total Error or loss of the network, i.e., Total of the error from both the output neurons.
@@ -59,10 +59,10 @@ Learning Rate (η) of the network is a hyperparameter along with the activation 
     E2 = 0.5 * (t2 - a_o2)^2
     E_Total = E1 + E2
 
-σ above represents sigmoid activation function [Formulae: 1/(1+e^(-x)]
+σ above represents sigmoid activation function [Formula: 1/(1+e^(-x)]
 
 ## Derivation of backpropagation (Explain each major step)
-Since our primary objective is to reduce error or the difference between prediction and actual output (remaining constant, denoted by t1 and t2), we need to change our parameters/weights (w1 to w8) as they are affecting the prediction value. This in turn changes the values of h1, h2 and O1, O2 (O1, O2 being the predicted values).
+Since our primary objective is to reduce error or the difference between prediction and actual output (remaining constant, denoted by t1 and t2), we need to change our parameters/weights (w1 to w8) as they are affecting the prediction value. This in turn changes the values of h1, h2 and O1, O2 (O1, O2 being the pre-activated predicted values).
 
 Backpropagation calculates the gradients of error function with respect to weights. The calculation proceeds backwards through the network changing the weights so as to reduce the error. Here we assume that when one of the weights is changed the other weights remain constant.
 
