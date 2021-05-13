@@ -20,8 +20,8 @@ The learning rate (η) taken here is 0.5 and the activation function for this ca
 Here we have used the exact same parameter values that has been discussed in the session. Below listed are the initial values and brief description for each of the acronyms. (based on the network mentioned in the image)
 1. i1 = 0.05 (input 1 - 1st input pvorided to the network).
 2. i2 = 0.10 (input 2 - 2nd input pvorided to the network).
-3. t1 = 0.01 (target 1 - Expected 1st output).
-4. t2 = 0.99 (target 2 - Expected 2nd output).
+3. t1 = 0.01 (target 1 -  1st actual value).
+4. t2 = 0.99 (target 2 -  2nd actual value).
 5. h1 = 1st neuron of the hidden layer.
 6. h2 = 2nd neuron of the hidden layer.
 7. w1 = 0.15 (w1 is the weight connection between input 1 [i1] to 1st neuron of the hidden layer [h1]).
