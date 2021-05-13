@@ -2,7 +2,7 @@
 The School of AI repo for END 2.0 Session 2
 
 ---
-[Link to Excel Sheet](https://github.com/anirbanmukherjee2709/tsai_end2.0_Session_2/raw/main/Session_2_Backpropogation.xlsx)
+## [Link to Excel Sheet](https://github.com/anirbanmukherjee2709/tsai_end2.0_Session_2/raw/main/Session_2_Backpropogation.xlsx)
 ## Rewrite the whole excel sheet showing backpropagation. Explain each major step, and write it on Github.
 Here we show a sample network for the purpose of this exercise. For the simplicity of calculation we avoid the usage of biases in the network.
 
